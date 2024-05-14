@@ -1,7 +1,5 @@
 # INFO6250 Project1 - Server-side Dynamic Site
 
-**Due Wed Feb 22 11:59pm PT**
-
 ## Submission Instructions
 
 - Start from the up-to-date main branch (git checkout main; git pull origin main)
