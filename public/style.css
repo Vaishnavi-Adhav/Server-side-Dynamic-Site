@@ -1,0 +1,440 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: antiquewhite;
+
+    font-family: sans-serif;
+}
+
+main {
+    flex: 1
+}
+
+.page-title {
+    margin-top: 3.1rem;
+
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.login-form {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.login-form-label, .data-form-label {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    padding-right: 1rem;
+    width: 90%;
+
+    font-size: 1.2rem;
+}
+
+.login-form-error-message {
+    color: red
+}
+
+#username-input, #newWord {
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.invalid-page {
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem;
+
+    color: red;
+
+    font-size: 2.2rem;
+}
+
+.login-link {
+    display: flex;
+    justify-content: center;
+}
+
+.stored-word {
+    display: flex;
+    justify-content: center;
+
+    padding: 1.4rem;
+
+    font-size: 1.2rem;
+}
+
+.shift-position {
+    margin-top: 0;
+}
+
+.unshift-position {
+    margin-top: 3rem;
+
+}
+
+.login-button {
+    font-size: 1.1rem;
+
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    padding: 1rem 2.5rem;
+
+    color: black;
+    background-color: #7ca340;
+
+    box-shadow: 0px 6px 6px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+
+.win-message {
+    color: green;
+}
+
+.login-button:hover {
+    background-color: #58900266;
+    color: black;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    background-color: black;
+    color: white;
+}
+
+.headerimage {
+    padding-right: 2rem;
+    width: 10rem;
+    height: 100%;
+}
+
+header h1 {
+    grid-column: span 10;
+}
+
+header .topnav {
+    grid-column-start: -1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+}
+
+.menu-item {
+    padding: 0.7rem;
+    margin: 0.3rem;
+
+    text-align: center;
+
+    color: white
+}
+
+.menu-item a {
+    padding: 1rem;
+
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    background-color: white;
+    color: black;
+
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 1.8rem;
+
+    margin-bottom: 0;
+}
+
+.login-content {
+    position: relative;
+    left: 15%;
+    right: 15%;
+
+    width: 70%;
+    height: 20rem;
+    border-radius: 2rem;
+    padding-top: 0.3rem;
+    margin: 1rem;
+
+    background-color: #f2d2a8;
+}
+
+.guess-error-message {
+    margin-left: 1rem;
+
+    color: red;
+}
+
+.guess-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.guess-button {
+    margin-left: 1rem;
+}
+
+.guess-info {
+    display: flex;
+    justify-content: center;
+}
+
+.possible-word {
+    display: inline;
+
+    margin: 0.1rem;
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+    border: 1px solid black;
+
+    background-color: burlywood;
+}
+
+.possible-word:hover {
+    cursor: default;
+}
+
+.possible-words {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.game-content h1 {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.previous-words {
+    grid-row-start: 2;
+    grid-row-end: 100;
+    grid-column-start: 1;
+
+    margin-top: 0.2rem;
+
+    list-style: none;
+}
+
+.report-data {
+    font-style: italic;
+}
+
+.previous-guess-entry {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.welcome-message-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    margin: 0.2rem;
+}
+
+.welcome-message {
+    grid-column-start: 1;
+    grid-column: span 6;
+
+    font-style: italic;
+}
+
+.welcome-message-row form {
+    grid-column-start: -1;
+}
+
+.previous-guess {
+    margin: 0.1rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+
+    background-color: #ffc0cb87;
+}
+
+.current-guess-result {
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    margin-top: 0.2rem;
+    padding-left: 0.3rem;
+}
+
+.valid-guesses {
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    margin: 0;
+    padding-left: 0.3rem;
+}
+
+.previous-guesses-title {
+    margin-top: 0.2rem;
+    padding-left: 0.5rem;
+}
+
+.game-report-title {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 0.3rem;
+}
+
+.most-recent-valid-guess {
+    grid-row-start: 3;
+    grid-column-start: 2;
+
+    padding-left: 0.3rem;
+}
+
+.total-current-guesses {
+    grid-row-start: 4;
+    grid-column-start: 2;
+
+    margin: 0;
+    padding-left: 0.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.game-report {
+    border: 1px solid black;
+    margin: 0.8rem 0.5rem 0.5rem;
+    border-radius: 1.5rem;
+
+    color: black;
+    background-color: #f2d2a8;
+}
+
+.new-game-form {
+    padding-top: 1rem;
+}
+
+.new-game-button {
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    padding: 0.4rem 5rem;
+    border-radius: 0.6rem;
+
+    background-color: black;
+    color: pink;
+
+    box-shadow: 0px 6px 6px rgb(0 0 0 / 20%);
+    font-size: 1rem;
+}
+
+.guess-input {
+    padding: 0.3rem;
+}
+
+.logout-button {
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    padding: 0.3rem 0.5rem;
+
+    background-color: #ff0000ba;
+    color: black;
+
+    cursor: pointer;
+}
+
+.guess-button {
+    padding: 0.3rem;
+    border-radius: 0.6rem;
+
+    background-color: pink;
+    color: black;
+
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 6px 6px rgb(0 0 0 / 20%);
+}
+
+.guess-button:hover {
+    background-color: #80808078;
+    color: black;
+}
+
+.new-game-button:hover {
+
+    background-color: #ffc2cc4f;
+    color: black;
+
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.game-report-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footerlinks {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    padding-left: 0.3rem;
+    margin: 0;
+
+    background-color: black;
+    list-style: none;
+}
+
+.footer-item {
+    grid-column: span 3;
+    align-items: center;
+
+    padding: 1.3rem;
+    margin: 0.3rem;
+
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
